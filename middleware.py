@@ -4,3 +4,8 @@ def simple_middleware(app):
         print("Middleware executed!")
         return app(environ, start_response)
     return middleware
+
+def validator(environ, start_response):
+    # Example validator logic
+    print("Validator executed!")
+    return start_response
