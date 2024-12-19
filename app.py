@@ -1,5 +1,5 @@
 from flask import Flask
-from middleware import simple_middleware
+from middleware import simple_middleware, validator
 from server import create_server
 
 app = Flask(__name__)
