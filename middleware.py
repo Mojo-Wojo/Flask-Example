@@ -5,7 +5,6 @@ def simple_middleware(app):
         return app(environ, start_response)
     return middleware
 
-def validator(environ, start_response):
-    # Example validator logic
-    print("Validator executed!")
-    return start_response
+def validator(input_string):
+    # Check if the string contains any numbers
+    return any(char.isdigit() for char in input_string)
